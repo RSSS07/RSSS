@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>SHISHU SHIKSHA SADAN</title> 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header Placeholder */
+    .header-placeholder {
+      background: black;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    /* School Name and Tagline */
+    .school-info {
+      text-align: left;
+      margin: 20px 40px;
+    }
+
+    .school-info h1 {
+      font-size: 1.5em; /* Reduced size */
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .school-info p {
+      font-size: 1em; /* Reduced size */
+      margin: 5px 0;
+      color: #777;
+    }
+
+    /* Slideshow */
+    .slideshow {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      max-width: 70%;
+      margin: 20px auto;
+      border-radius: 10px;
+      gap: 10px;
+      height: 140px; /* Reduced size */
+    }
+
+    .slideshow .slide-container {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ddd;
+      border-radius: 8px;
+      position: relative;
+      animation: slide 10s linear infinite; /* Smooth animation added */
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .slideshow img {
+      width: 95%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .slideshow .slide-container div {
+      position: absolute;
+      bottom: 5px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    /* Buttons */
+    .button-section {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .button-section button {
+      margin: 10px;
+      padding: 6px 16px;
+      border: none;
+      border-radius: 25px;
+      font-size: 0.8em; /* Reduced size */
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-green {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button-blue {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .button-orange {
+      background-color: #FF9800;
+      color: white;
+    }
+
+    .button-section button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style> 
+ </head> 
+ <body> <!-- Header Section --> 
+  <div class="header-placeholder">
+    School Logo / Placeholder 
+  </div> <!-- School Name and Tagline --> 
+  <div class="school-info"> 
+   <h1>SHISHU SHIKSHA SADAN SENIOR SECONDARY SCHOOL</h1> 
+   <p>"Quality Education in a Nurturing Environment"</p> 
+  </div> <!-- Slideshow Section --> 
+  <div class="slideshow"> 
+   <div class="slide-container"> 
+    <img src="black-overlay.jpg" alt="Student 1"> 
+    <div>
+     Student 1 - Doctor
+    </div> 
+   </div> 
+   <div class="slide-container"> 
+    <img src="black-overlay.jpg" alt="Student 2"> 
+    <div>
+     Student 2 - Engineer
+    </div> 
+   </div> 
+  </div> <!-- Redirection Buttons --> 
+  <div class="button-section"> <button class="button-green">Admissions</button> <button class="button-blue">Academics</button> <button class="button-orange">Events</button> <button class="button-green">Contact Us</button> 
+  </div> <!-- Events Section --> 
+  <div class="events-section"> 
+   <h2>Upcoming Events</h2> 
+   <div class="event-cards"> <!-- Event Card 1 --> 
+    <div class="event-card"> 
+     <img src="event1.jpg" alt="Event 1"> 
+     <h3>Annual Sports Day</h3> 
+     <p>Date: 25th January 2025</p> 
+     <p>Join us for an exciting day filled with sports and fun activities!</p> <button>Read More</button> 
+    </div> <!-- Event Card 2 --> 
+    <div class="event-card"> 
+     <img src="event2.jpg" alt="Event 2"> 
+     <h3>Science Exhibition</h3> 
+     <p>Date: 5th February 2025</p> 
+     <p>Explore the innovative science projects created by our students.</p> <button>Read More</button> 
+    </div> 
+   </div> 
+  </div> 
+  <style>
+  .events-section {
+    margin: 40px auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .events-section h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 20px;
+  }
+
+  .event-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .event-card {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .event-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+
+  .event-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+  }
+
+  .event-card button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+  }
+
+  .event-card button:hover {
+    background: #45a049;
+  }
+</style> 
+ </body>
+</html>
